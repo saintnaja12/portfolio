@@ -38,7 +38,7 @@ const Work = () => (
           <Center>E-Testing - Table List</Center>
         </Heading>
         <Link
-          href="http://localhost:3000/screenshot/LMS-AXA/eTesting-TableList.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/LMS-AXA/eTesting-TableList.png"
           isExternal
         >
           <WorkImage
@@ -53,7 +53,7 @@ const Work = () => (
           <Center>E-Testing - Create</Center>
         </Heading>
         <Link
-          href="http://localhost:3000/screenshot/LMS-AXA/eTesting-Create.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/LMS-AXA/eTesting-Create.png"
           isExternal
         >
           <WorkImage
@@ -62,7 +62,7 @@ const Work = () => (
           />
         </Link>
         <Link
-          href="http://localhost:3000/screenshot/LMS-AXA/eTesting-Create-2.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/LMS-AXA/eTesting-Create-2.png"
           isExternal
         >
           <WorkImage
@@ -77,7 +77,7 @@ const Work = () => (
           <Center>E-Certificate - Table List</Center>
         </Heading>
         <Link
-          href="http://localhost:3000/screenshot/LMS-AXA/eCert-TableList.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/LMS-AXA/eCert-TableList.png"
           isExternal
         >
           <WorkImage
@@ -92,7 +92,7 @@ const Work = () => (
           <Center>E-Certificate - Create</Center>
         </Heading>
         <Link
-          href="http://localhost:3000/screenshot/LMS-AXA/eCert-Create.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/LMS-AXA/eCert-Create.png"
           isExternal
         >
           <WorkImage

@@ -30,37 +30,37 @@ const Work = () => (
         </Heading>
 
         <Link
-          href="http://localhost:3000/screenshot/DeMusic/Wireframe - 1-1.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/DeMusic/Wireframe - 1-1.png"
           isExternal
         >
           <WorkImage src="/screenshot/DeMusic/Wireframe - 1-1.png" alt="TTB" />
         </Link>
         <Link
-          href="http://localhost:3000/screenshot/DeMusic/Wireframe - 2-1.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/DeMusic/Wireframe - 2-1.png"
           isExternal
         >
           <WorkImage src="/screenshot/DeMusic/Wireframe - 2-1.png" alt="TTB" />
         </Link>
         <Link
-          href="http://localhost:3000/screenshot/DeMusic/Wireframe - 3-1.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/DeMusic/Wireframe - 3-1.png"
           isExternal
         >
           <WorkImage src="/screenshot/DeMusic/Wireframe - 3-1.png" alt="TTB" />
         </Link>
         <Link
-          href="http://localhost:3000/screenshot/DeMusic/Wireframe - 4-1.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/DeMusic/Wireframe - 4-1.png"
           isExternal
         >
           <WorkImage src="/screenshot/DeMusic/Wireframe - 4-1.png" alt="TTB" />
         </Link>
         <Link
-          href="http://localhost:3000/screenshot/DeMusic/Wireframe - 5-1.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/DeMusic/Wireframe - 5-1.png"
           isExternal
         >
           <WorkImage src="/screenshot/DeMusic/Wireframe - 5-1.png" alt="TTB" />
         </Link>
         <Link
-          href="http://localhost:3000/screenshot/DeMusic/Wireframe - 6-1.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/DeMusic/Wireframe - 6-1.png"
           isExternal
         >
           <WorkImage src="/screenshot/DeMusic/Wireframe - 6-1.png" alt="TTB" />
@@ -72,37 +72,37 @@ const Work = () => (
         </Heading>
 
         <Link
-          href="http://localhost:3000/screenshot/DeMusic/Desktop - 1-1.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/DeMusic/Desktop - 1-1.png"
           isExternal
         >
           <WorkImage src="/screenshot/DeMusic/Desktop - 1-1.png" alt="TTB" />
         </Link>
         <Link
-          href="http://localhost:3000/screenshot/DeMusic/Desktop - 2-1.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/DeMusic/Desktop - 2-1.png"
           isExternal
         >
           <WorkImage src="/screenshot/DeMusic/Desktop - 2-1.png" alt="TTB" />
         </Link>
         <Link
-          href="http://localhost:3000/screenshot/DeMusic/Desktop - 3-1.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/DeMusic/Desktop - 3-1.png"
           isExternal
         >
           <WorkImage src="/screenshot/DeMusic/Desktop - 3-1.png" alt="TTB" />
         </Link>
         <Link
-          href="http://localhost:3000/screenshot/DeMusic/Desktop - 4-1.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/DeMusic/Desktop - 4-1.png"
           isExternal
         >
           <WorkImage src="/screenshot/DeMusic/Desktop - 4-1.png" alt="TTB" />
         </Link>
         <Link
-          href="http://localhost:3000/screenshot/DeMusic/Desktop - 5-1.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/DeMusic/Desktop - 5-1.png"
           isExternal
         >
           <WorkImage src="/screenshot/DeMusic/Desktop - 5-1.png" alt="TTB" />
         </Link>
         <Link
-          href="http://localhost:3000/screenshot/DeMusic/Desktop - 6-1.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/DeMusic/Desktop - 6-1.png"
           isExternal
         >
           <WorkImage src="/screenshot/DeMusic/Desktop - 6-1.png" alt="TTB" />

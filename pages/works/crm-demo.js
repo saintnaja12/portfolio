@@ -38,7 +38,7 @@ const Work = () => (
         </Heading>
 
         <Link
-          href="http://localhost:3000/screenshot/CRM-DEMO/Line-chat.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-DEMO/Line-chat.png"
           isExternal
         >
           <WorkImage
@@ -53,7 +53,7 @@ const Work = () => (
           <Center>Line chat group</Center>
         </Heading>
         <Link
-          href="http://localhost:3000/screenshot/CRM-DEMO/Line-chatGroup.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-DEMO/Line-chatGroup.png"
           isExternal
         >
           <WorkImage
@@ -68,7 +68,7 @@ const Work = () => (
           <Center>Messenger chat</Center>
         </Heading>
         <Link
-          href="http://localhost:3000/screenshot/CRM-DEMO/messenger-chat.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-DEMO/messenger-chat.png"
           isExternal
         >
           <WorkImage
@@ -82,7 +82,7 @@ const Work = () => (
           <Center>Messenger chat</Center>
         </Heading>
         <Link
-          href="http://localhost:3000/screenshot/CRM-DEMO/Role.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-DEMO/Role.png"
           isExternal
         >
           <WorkImage

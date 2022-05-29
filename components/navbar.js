@@ -74,7 +74,7 @@ const Navbar = props => {
           </LinkItem>
           <LinkItem
             target="_blank"
-            href="http://localhost:3000/resume/resume.pdf"
+            href="/resume/Resume.pdf"
             path={path}
             display="inline-flex"
             alignItems="center"

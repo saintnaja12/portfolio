@@ -40,7 +40,7 @@ const Work = () => (
         </Heading>
 
         <Link
-          href="http://localhost:3000/screenshot/CRM-TTB/chat-line.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-TTB/chat-line.png"
           isExternal
         >
           <WorkImage src="/screenshot/CRM-TTB/chat-line.png" alt="TTB" />
@@ -52,7 +52,7 @@ const Work = () => (
         </Heading>
 
         <Link
-          href="http://localhost:3000/screenshot/CRM-TTB/ticket-list.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-TTB/ticket-list.png"
           isExternal
         >
           <WorkImage src="/screenshot/CRM-TTB/ticket-list.png" alt="TTB" />
@@ -64,7 +64,7 @@ const Work = () => (
         </Heading>
 
         <Link
-          href="http://localhost:3000/screenshot/CRM-TTB/ticket-edit.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-TTB/ticket-edit.png"
           isExternal
         >
           <WorkImage src="/screenshot/CRM-TTB/ticket-edit.png" alt="TTB" />
@@ -76,7 +76,7 @@ const Work = () => (
         </Heading>
 
         <Link
-          href="http://localhost:3000/screenshot/CRM-TTB/masterData.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-TTB/masterData.png"
           isExternal
         >
           <WorkImage src="/screenshot/CRM-TTB/masterData.png" alt="TTB" />
@@ -88,13 +88,13 @@ const Work = () => (
         </Heading>
 
         <Link
-          href="http://localhost:3000/screenshot/CRM-TTB/train-bot-line.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-TTB/train-bot-line.png"
           isExternal
         >
           <WorkImage src="/screenshot/CRM-TTB/train-bot-line.png" alt="TTB" />
         </Link>
         <Link
-          href="http://localhost:3000/screenshot/CRM-TTB/train-bot-line-edit.png"
+          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-TTB/train-bot-line-edit.png"
           isExternal
         >
           <WorkImage
