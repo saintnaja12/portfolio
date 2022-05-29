@@ -1,25 +1,16 @@
 import NextLink from 'next/link'
 import {
-  Link,
   Container,
   Heading,
   Box,
-  SimpleGrid,
   Button,
-  List,
-  ListItem,
   useColorModeValue,
   chakra
 } from '@chakra-ui/react'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
-import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoTwitter, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
-import thumbYouTube from '../public/images/links/youtube.png'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -79,11 +70,11 @@ const Home = () => {
           Work
         </Heading>
         <Paragraph>
-          I've been a front-end developer since 2021. The frameworks of
+          I&apos;ve been a front-end developer since 2021. The frameworks of
           JavaScript I use are Vue.js, Nuxt.js, React.js, and Next.js.
         </Paragraph>
         <Box align="center" my={4}>
-          <NextLink href="/works">
+          <NextLink href="/works" passHref>
             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
               My Portfolio
             </Button>
@@ -118,11 +109,7 @@ const Home = () => {
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,{' '}
-          {/* <Link href="https://illust.odoruinu.net/" target="_blank">
-            Drawing
-          </Link> */}
-          , Play Guitars and Sing, Photography , Travel
+          Art, Music, Play Guitars and Sing, Photography , Travel
         </Paragraph>
       </Section>
     </Container>
