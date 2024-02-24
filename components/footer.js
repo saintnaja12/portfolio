@@ -6,7 +6,7 @@ const Footer = () => {
     <Box align="center" opacity={0.4} fontSize="sm">
       {new Date().getFullYear()} Teetouch Asawasupakul Reference from{' '}
       <Link href="https://www.craftz.dog/">
-        https://www.craftz.dog/ <ExternalLinkIcon mx="2px" />
+        craftz.dog <ExternalLinkIcon mx="2px" />
       </Link>
     </Box>
   )
