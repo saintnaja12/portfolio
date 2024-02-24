@@ -10,6 +10,9 @@ import Footer from '../footer'
 //   loading: () => <VoxelDogLoader />
 // })
 
+import Spline from '@splinetool/react-spline';
+
+
 const Main = ({ children, router }) => {
   return (
     <Box as="main" pb={8}>
@@ -29,6 +32,8 @@ const Main = ({ children, router }) => {
       <NavBar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
+        <Spline scene="https://prod.spline.design/QtlNl16oMP0z4TMf/scene.splinecode" ></Spline>
+
         {/* <LazyVoxelDog /> */}
 
         {children}
