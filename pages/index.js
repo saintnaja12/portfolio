@@ -17,7 +17,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Section from '../components/section'
 import Image from 'next/image'
-import { IoLogoFacebook, IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import { IoLogoFacebook, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -127,6 +127,17 @@ const Home = () => {
           On the web
         </Heading>
         <List>
+            <ListItem>
+                <Link href="https://github.com/saintnaja12" target="_blank">
+                <Button
+                    variant="ghost"
+                    colorScheme="teal"
+                    leftIcon={<IoLogoLinkedin />}
+                >
+                    @teetouch-asawasupakul
+                </Button>
+                </Link>
+            </ListItem>
           <ListItem>
             <Link href="https://github.com/saintnaja12" target="_blank">
               <Button
