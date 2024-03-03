@@ -13,7 +13,7 @@ import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
 const uc = () => (
-    <Layout title="UC Connect Co.,Ltd.">
+    <Layout title="Buzzebees Co.,Ltd.">
         <Container>
             <Title>Buzzebees Template - Vue.js, React.js</Title>
             <Heading as="h4" fontSize={16} mt={3} mb={2}>
