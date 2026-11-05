@@ -10,6 +10,7 @@ import thumbDeMusic from '../public/screenshot/de-music-app.png'
 import thumbUC from '../public/screenshot/UC.jpg'
 import thumbRiver from '../public/screenshot/riverpark.jpg'
 import thumbBzbs from '../public/screenshot/bzbs.jpg'
+import thumbDcs from '../public/screenshot/dcs.png'
 
 const Works = () => (
     <Layout title="Works">
@@ -47,11 +48,20 @@ const Works = () => (
                 </Section> */}
                 <Section delay={0.1}>
                     <WorkGridItem
+                        id="dcs"
+                        title="DCS (Premier Group)"
+                        thumbnail={thumbDcs}
+                    >
+                        Senior Software Engineer: MSIG, Nissan Leasing, KTB, Denso, Thai Honda
+                    </WorkGridItem>
+                </Section>
+                <Section delay={0.1}>
+                    <WorkGridItem
                         id="bzbs"
                         title="Buzzebees Co., Ltd."
                         thumbnail={thumbBzbs}
                     >
-                        Buzzebees Co., Ltd.
+                        Front-end Developer: loyalty platform, Shopping Cart &amp; My Order
                     </WorkGridItem>
                 </Section>
                 <Section delay={0.1}>
@@ -60,7 +70,7 @@ const Works = () => (
                         title="Riverpark Consultant Co. Ltd."
                         thumbnail={thumbRiver}
                     >
-                        Riverpark Consultant Co. Ltd.
+                        Front-end Developer: Tokio Marine PDPA Agent
                     </WorkGridItem>
                 </Section>
                 <Section delay={0.2}>
@@ -78,7 +88,7 @@ const Works = () => (
                         title="UC Connect Co.,Ltd."
                         thumbnail={thumbUC}
                     >
-                        UC Connect Co.,Ltd.
+                        Front-end Developer: AXA LMS, TTB CRM
                     </WorkGridItem>
                     </Section>
             </SimpleGrid>

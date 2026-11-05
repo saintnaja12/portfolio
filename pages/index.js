@@ -34,14 +34,14 @@ const Home = () => {
             bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
             css={{ backdropFilter: 'blur(10px)' }}
         >
-            Hello, I&apos;m a front-end developer based in Thailand
+            Hello, I&apos;m a software engineer and UI designer based in Bangkok, Thailand
         </Box>
         <Box display={{ md: 'flex' }}>
             <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
                 Teetouch Asawasupakul.
             </Heading>
-            <p>Frontend Developer</p>
+            <p>Senior Software Engineer · Front-end Developer &amp; UI Designer</p>
             {/* Artist / Developer / Designer */}
             </Box>
             <Box
@@ -76,8 +76,13 @@ const Home = () => {
           Work
         </Heading>
         <Paragraph>
-          I&apos;ve been a front-end developer since 2021. The frameworks of
-          JavaScript I use are Vue.js, Nuxt.js, React.js, and Next.js.
+          I&apos;ve built web applications since 2021, and I&apos;m now a Senior
+          Software Engineer at DCS (Premier Group). I design interfaces in Figma,
+          build them in Angular, Vue/Nuxt and React/Next, and write back-end APIs
+          in Java and Node.js. My recent work covers insurance, banking and
+          manufacturing clients such as MSIG, Krungthai Bank, Nissan Leasing,
+          Denso and Thai Honda, including MSIG&apos;s Marine Insurance Portal,
+          which went live in production in December 2025.
         </Paragraph>
         <Box align="center" my={4}>
           <NextLink href="/works" passHref>
@@ -109,10 +114,36 @@ const Home = () => {
         Worked at Riverpark Consultant Co. Ltd.
         </BioSection>
         <BioSection>
-          <BioYear>Nov 2022</BioYear>
-          Works at Buzzebees Co., Ltd.
+          <BioYear>Oct 2022</BioYear>
+          Worked at Buzzebees Co., Ltd.
+        </BioSection>
+        <BioSection>
+          <BioYear>Jun 2024</BioYear>
+          Works at DCS (Premier Group) as a Senior Software Engineer.
         </BioSection>
       </Section>
+      <Section delay={0.25}>
+        <Heading as="h3" variant="section-title">
+          Skills
+        </Heading>
+        <BioSection>
+          <BioYear>Front-end</BioYear>
+          Angular, Vue.js, Nuxt.js, React, Next.js, TypeScript, Tailwind CSS
+        </BioSection>
+        <BioSection>
+          <BioYear>Back-end</BioYear>
+          Java, Node.js, PHP, REST APIs, MySQL, SQL Server, MongoDB
+        </BioSection>
+        <BioSection>
+          <BioYear>Design</BioYear>
+          Figma, Adobe XD, wireframing, design systems
+        </BioSection>
+        <BioSection>
+          <BioYear>Delivery</BioYear>
+          Jest, SIT/UAT, GitLab CI/CD, Postman, Jira
+        </BioSection>
+      </Section>
+
       <Section delay={0.3}>
         <Heading as="h3" variant="section-title">
           I ♥
@@ -128,7 +159,7 @@ const Home = () => {
         </Heading>
         <List>
             <ListItem>
-                <Link href="https://github.com/saintnaja12" target="_blank">
+                <Link href="https://www.linkedin.com/in/teetouch-asawasupakul/" target="_blank">
                 <Button
                     variant="ghost"
                     colorScheme="teal"
