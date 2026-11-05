@@ -9,6 +9,12 @@ export default class Document extends NextDocument {
         <Head />
         <body>
           <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+          <script
+            dangerouslySetInnerHTML={{
+              __html:
+                "try{if(sessionStorage.getItem('ta-loader-seen')==='1'){document.documentElement.classList.add('ta-loader-seen')}}catch(e){}"
+            }}
+          />
           <Main />
           <NextScript />
         </body>
