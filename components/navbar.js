@@ -81,7 +81,7 @@ const Navbar = props => {
             style={{ gap: 4 }}
             pl={2}
           >
-            Curriculum Vitae (CV)
+            Resume (CV)
           </LinkItem>
         </Stack>
 
@@ -101,10 +101,10 @@ const Navbar = props => {
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
                 <NextLink
-                  href="https://teetouch-portfolio.vercel.app/resume/CV-1.pdf"
+                  href="/resume/CV-1.pdf"
                   passHref
                 >
-                  <MenuItem as={Link}>Resume</MenuItem>
+                  <MenuItem as={Link} target="_blank">Resume (CV)</MenuItem>
                 </NextLink>
               </MenuList>
             </Menu>

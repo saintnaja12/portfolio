@@ -1,108 +1,45 @@
-import {
-  Box,
-  Container,
-  Link,
-  List,
-  ListItem,
-  Heading,
-  Center
-} from '@chakra-ui/react'
-import { Title, WorkImage, Meta } from '../../components/work'
-import P from '../../components/paragraph'
+import { Container, Heading } from '@chakra-ui/react'
+import { Title, Project, Item, Screenshot } from '../../components/work'
 import Layout from '../../components/layouts/article'
 
 const Work = () => (
-  <Layout title="The four painters">
+  <Layout title="TTB · CRM">
     <Container>
-      <Title>TTB</Title>
-      <P>
-        I developed a ticket module, line chat module using vue-socket.io and
-        training line chat bot.
-      </P>
-      <P>
-        A ticket that connects to a webview (iframe) and sends/receives data
-        back and forth on webview.
-      </P>
-      <P>
-        Master data management and this dataset will be used for the entire
-        project.
-      </P>
-      <List ml={4} my={4}>
-        <ListItem>
-          <Meta>Stack</Meta>
-          <span>NodeJS, Vue.js</span>
-        </ListItem>
-      </List>
+      <Title>TTB · CRM</Title>
 
-      <Box>
-        <Heading as="h4" fontSize={16} mt={3} mb={2}>
-          <Center>Line chat</Center>
-        </Heading>
+      <Project name="Customer relationship management for TTB Broker" period="UC Connect · 2021" stack={['Vue.js', 'Vuexy', 'Node.js', 'Socket.io']}>
+        <Item>
+          Built the ticket module and real-time LINE chat module, and trained the LINE chatbot.
+        </Item>
+        <Item>
+          Connected tickets to an embedded webview (iframe) with two-way data exchange.
+        </Item>
+        <Item>
+          Built master data management used across the whole project.
+        </Item>
+      </Project>
 
-        <Link
-          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-TTB/chat-line.png"
-          isExternal
-        >
-          <WorkImage src="/screenshot/CRM-TTB/chat-line.png" alt="TTB" />
-        </Link>
-      </Box>
-      <Box>
-        <Heading as="h4" fontSize={16} mt={3} mb={2}>
-          <Center>Ticket List</Center>
-        </Heading>
+      <Heading as="h4" fontSize={17} mt={4} mb={3}>
+        LINE chat
+      </Heading>
+      <Screenshot src="/screenshot/CRM-TTB/chat-line.png" caption="Real-time LINE chat" />
 
-        <Link
-          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-TTB/ticket-list.png"
-          isExternal
-        >
-          <WorkImage src="/screenshot/CRM-TTB/ticket-list.png" alt="TTB" />
-        </Link>
-      </Box>
-      <Box>
-        <Heading as="h4" fontSize={16} mt={3} mb={2}>
-          <Center>Ticket Edit</Center>
-        </Heading>
+      <Heading as="h4" fontSize={17} mt={4} mb={3}>
+        Tickets
+      </Heading>
+      <Screenshot src="/screenshot/CRM-TTB/ticket-list.png" caption="Ticket list" />
+      <Screenshot src="/screenshot/CRM-TTB/ticket-edit.png" caption="Edit a ticket" />
 
-        <Link
-          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-TTB/ticket-edit.png"
-          isExternal
-        >
-          <WorkImage src="/screenshot/CRM-TTB/ticket-edit.png" alt="TTB" />
-        </Link>
-      </Box>
-      <Box>
-        <Heading as="h4" fontSize={16} mt={3} mb={2}>
-          <Center>Master Data</Center>
-        </Heading>
+      <Heading as="h4" fontSize={17} mt={4} mb={3}>
+        Master data
+      </Heading>
+      <Screenshot src="/screenshot/CRM-TTB/masterData.png" caption="Master data management" />
 
-        <Link
-          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-TTB/masterData.png"
-          isExternal
-        >
-          <WorkImage src="/screenshot/CRM-TTB/masterData.png" alt="TTB" />
-        </Link>
-      </Box>
-      <Box>
-        <Heading as="h4" fontSize={16} mt={3} mb={2}>
-          <Center>Training Line Chat Bot</Center>
-        </Heading>
-
-        <Link
-          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-TTB/train-bot-line.png"
-          isExternal
-        >
-          <WorkImage src="/screenshot/CRM-TTB/train-bot-line.png" alt="TTB" />
-        </Link>
-        <Link
-          href="https://teetouch-portfolio.vercel.app/screenshot/CRM-TTB/train-bot-line-edit.png"
-          isExternal
-        >
-          <WorkImage
-            src="/screenshot/CRM-TTB/train-bot-line-edit.png"
-            alt="TTB"
-          />
-        </Link>
-      </Box>
+      <Heading as="h4" fontSize={17} mt={4} mb={3}>
+        Chatbot training
+      </Heading>
+      <Screenshot src="/screenshot/CRM-TTB/train-bot-line.png" caption="Chatbot intents" />
+      <Screenshot src="/screenshot/CRM-TTB/train-bot-line-edit.png" caption="Edit chatbot responses" />
     </Container>
   </Layout>
 )
