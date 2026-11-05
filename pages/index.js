@@ -235,7 +235,7 @@ const Home = () => (
         Outside work
       </Heading>
       <Paragraph>
-        Music, guitar and singing, surf skating, photography and travel.
+        Music, guitar and singing, surf skating, hiking, photography and travel.
       </Paragraph>
     </Section>
 
