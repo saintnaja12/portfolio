@@ -1,66 +1,41 @@
+import { Container, Text } from '@chakra-ui/react'
 import {
-  Container,
-  List,
-  ListItem,
-  Heading,
-  Center,
-  Divider,
-  Text,
-  UnorderedList
-} from '@chakra-ui/react'
-import { Title, Meta } from '../../components/work'
+  Title,
+  CompanyHeader,
+  Project,
+  Item
+} from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
-const Project = ({ name, period, children, stack, tools }) => (
-  <>
-    <Heading as="h4" fontSize={16} mt={3} mb={1}>
-      <Center textAlign="center">{name}</Center>
-    </Heading>
-    <Text fontSize={14} opacity={0.7} textAlign="center" mb={2}>
-      {period}
-    </Text>
-    <UnorderedList ml={6} spacing={1}>
-      {children}
-    </UnorderedList>
-    <List ml={4} my={4}>
-      {stack && (
-        <ListItem>
-          <Meta>Stack</Meta>
-          <span>{stack}</span>
-        </ListItem>
-      )}
-      {tools && (
-        <ListItem>
-          <Meta>Tools</Meta>
-          <span>{tools}</span>
-        </ListItem>
-      )}
-    </List>
-    <Divider my={2} />
-  </>
-)
-
-const Item = ({ children }) => <ListItem>{children}</ListItem>
-
-const dcs = () => (
-  <Layout title="DCS (Premier Group)">
+const Dcs = () => (
+  <Layout title="Datapro Computer Systems (DCS)">
     <Container>
-      <Title>DCS (Premier Group) - Senior Software Engineer</Title>
+      <Title>Datapro Computer Systems (DCS)</Title>
+
+      <CompanyHeader
+        logo="/img/dcs-logo.png"
+        company="Datapro Computer Systems Co., Ltd. (DCS)"
+        role="Senior Software Engineer · Technical Programming Unit"
+        period="Jun 2024 – Present"
+        location="Bangkok"
+        now
+      >
+        A member of Premier Technology PCL (Premier Group), providing
+        enterprise IT solutions and services in Thailand since 1986.
+      </CompanyHeader>
+
       <P>
-        Since June 2024 I have worked in the Technical Programming Unit at DCS,
-        delivering <Text as="b">front-end development</Text>,{' '}
-        <Text as="b">UI design</Text> and <Text as="b">back-end APIs</Text>{' '}
-        for enterprise clients, from requirements through SIT and UAT to
-        production go-live.
+        I deliver <Text as="b">front-end development</Text>,{' '}
+        <Text as="b">UI design</Text> and <Text as="b">back-end APIs</Text> for
+        DCS clients in insurance, banking and manufacturing, and take projects
+        from requirements through SIT and UAT to production go-live.
       </P>
-      <Divider my={4} />
 
       <Project
-        name="MSIG - Marine Insurance Portal"
-        period="Oct 2025 - Present"
-        stack="Angular, TypeScript, Jest"
-        tools="Figma, Jira, GitLab"
+        name="MSIG · Marine Insurance Portal"
+        period="Oct 2025 – Present"
+        stack={['Angular', 'TypeScript', 'Jest', 'Figma', 'GitLab', 'Jira']}
       >
         <Item>
           <Text as="b">Phase 1.1 went live in production in Dec 2025.</Text>{' '}
@@ -70,7 +45,7 @@ const dcs = () => (
         </Item>
         <Item>
           <Text as="b">Phase 1.2</Text> (from Jan 2026): set up the front-end
-          structure with Jest unit tests and built the policy, certificate
+          structure with Jest unit tests, and built the policy, certificate
           (edit, inquiry, copy, endorse, cancel), monthly processing, request
           authorization, report and system-setting modules from my own Figma
           mock-ups.
@@ -83,10 +58,9 @@ const dcs = () => (
       </Project>
 
       <Project
-        name="Nissan Leasing - Loan Insurance System (integrated with MSIG)"
-        period="Jun 2026 - Present"
-        stack="Java, JavaScript, REST API, Webhook"
-        tools="GitLab CI/CD, GitHub, Postman"
+        name="Nissan Leasing · Loan Insurance System integrated with MSIG"
+        period="Jun 2026 – Present"
+        stack={['Java', 'JavaScript', 'REST API', 'Webhook', 'GitLab CI/CD', 'Postman']}
       >
         <Item>
           Built the system full-stack. The front-end covers OTP login, a
@@ -106,9 +80,9 @@ const dcs = () => (
       </Project>
 
       <Project
-        name="Krungthai Bank (KTB) - DLP (Data Loss Prevention) Platform"
-        period="Aug - Sep 2025"
-        tools="Jira"
+        name="Krungthai Bank (KTB) · DLP (Data Loss Prevention) Platform"
+        period="Aug – Sep 2025"
+        stack={['Front-end', 'REST API', 'Jira']}
       >
         <Item>
           Built the front-end for Data Asset Monitoring &amp; Remediation,
@@ -118,9 +92,9 @@ const dcs = () => (
       </Project>
 
       <Project
-        name="Denso - Frontier, CSA, Claim & Inventory Control"
-        period="Jan 2025 - Apr 2026"
-        tools="Figma, Mazer Admin, Jira"
+        name="Denso · Frontier, CSA, Claim & Inventory Control"
+        period="Jan 2025 – Apr 2026"
+        stack={['Front-end', 'Back-end', 'Mazer Admin', 'Figma']}
       >
         <Item>
           <Text as="b">Frontier Phase 2:</Text> Repositioning Plan input with a
@@ -140,13 +114,13 @@ const dcs = () => (
       </Project>
 
       <Project
-        name="Thai Honda - Corporate Web Portal & Web Career"
-        period="Jul - Dec 2024"
-        tools="Figma, Visily, GitLab"
+        name="Thai Honda · Corporate Web Portal & Web Career"
+        period="Jul – Dec 2024"
+        stack={['Figma', 'Visily', 'Front-end', 'GitLab CI/CD']}
       >
         <Item>
-          Designed desktop and mobile UI in Figma, with reusable components
-          and user-flow presentations for the client.
+          Designed desktop and mobile UI in Figma, with reusable components and
+          user-flow presentations for the client.
         </Item>
         <Item>
           Designed a 10-module admin back-office in about three weeks: users,
@@ -159,14 +133,14 @@ const dcs = () => (
         </Item>
       </Project>
 
-      <Project name="Other work" period="2024 - 2026">
+      <Project name="Other work" period="2024 – 2026">
         <Item>
           Built AutoSpec Generator for the internal hackathon: UI design,
           project setup and presentation.
         </Item>
         <Item>
-          Built a LINE OA table-reservation POC for Shuang Hor, and created
-          the proposal and UI for an online scholarship system.
+          Built a LINE OA table-reservation POC for Shuang Hor, and created the
+          proposal and UI for an online scholarship system.
         </Item>
         <Item>Coached teammates on Figma and on Marine Portal modules.</Item>
       </Project>
@@ -174,5 +148,5 @@ const dcs = () => (
   </Layout>
 )
 
-export default dcs
+export default Dcs
 export { getServerSideProps } from '../../components/chakra'

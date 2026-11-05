@@ -1,164 +1,96 @@
+import { Container, Link, Text } from '@chakra-ui/react'
 import {
-  Container,
-  List,
-  ListItem,
-  Heading,
-  Center,
-  Divider,
-  Link,
-  Text
-} from '@chakra-ui/react'
-import { Title, Meta } from '../../components/work'
+  Title,
+  CompanyHeader,
+  Project,
+  Item
+} from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
-const bzbs = () => (
-    <Layout title="Buzzebees Co.,Ltd.">
-        <Container>
-            <Title>Buzzebees Template - Vue.js, React.js</Title>
-            <Heading as="h4" fontSize={16} mt={3} mb={2}>
-                <Center>Buzzebees Template</Center>
-            </Heading>
-            <P>
-                Developed systems and updated templates following <Text as='b'>test cases</Text>.
-            </P>
-            <P>
-                This template can be used for a variety of projects.
-            </P>
-            <List ml={4} my={4}>
-                <ListItem>
-                    <Meta>Stack</Meta>
-                    <span>Vue.js, React.js, Node.js</span>
-                </ListItem>
-                <ListItem>
-                    <Meta>Framework CSS</Meta>
-                    <span>Sass, Tailwind</span>
-                </ListItem>
-                <ListItem>
-                    <Meta>Library</Meta>
-                    <span>socket.io, LineLiff</span>
-                </ListItem>
-            </List>
-            <Divider mb={4} />
+const Bzbs = () => (
+  <Layout title="Buzzebees">
+    <Container>
+      <Title>Buzzebees</Title>
 
-            <Heading as="h4" fontSize={16} mt={3} mb={2}>
-                <Center>Buzzebees Projects -
-                    <Link href="https://101truedigitalpark.buzzebees-dev.com" target="_blank">
-                        101 True Digital Park
-                    </Link>
-                    ,&nbsp;
-                    <Link href="https://seaconplus.buzzebees-dev.com" target="_blank">
-                        Seacon Plus
-                    </Link>
-                </Center>
-            </Heading>
-            <P>
-                Bring <Text as='b'>Template</Text> to develop a system assigned to work assignments, using <Text as='b'>LineLiff</Text> mostly.
-            </P>
-            <P>
-                Within the system, there is a campaign or privilege exchange for those who come to redeem.
-            </P>
-            <P>
-                Sometimes custom features may be added to the project.
-            </P>
-            <P>
-                Projects are connected to the <Text as='b'>Shopping cart & My order</Text> system so that users can purchase campaign or privilege.
-            </P>
-            <P>
-                Using Node.js to control the use of Vue.js, such as logging in or using various routes.
-            </P>
-            <List ml={4} my={4}>
-                <ListItem>
-                    <Meta>Stack</Meta>
-                    <span>Vue.js, Node.js</span>
-                </ListItem>
-                <ListItem>
-                    <Meta>Framework CSS</Meta>
-                    <span>Sass, Tailwind</span>
-                </ListItem>
-                <ListItem>
-                    <Meta>Library</Meta>
-                    <span>socket.io, LineLiff</span>
-                </ListItem>
-            </List>
-            <Divider my={2} />
+      <CompanyHeader
+        logo="/screenshot/bzbs.jpg"
+        company="Buzzebees Co., Ltd."
+        role="Front-end Developer"
+        period="Oct 2022 – May 2024"
+        location="Bangkok"
+      >
+        Loyalty and CRM platform used by brands across Thailand.
+      </CompanyHeader>
 
-            <Heading as="h4" fontSize={16} mt={3} mb={2}>
-                <Center>Productization - Shopping cart & My order</Center>
-            </Heading>
-            <P>Developed <Text as='b'>Shopping cart & My order</Text> system to support applications connected to this system.</P>
-            <P><Text as='b'>Main Features:</Text> Supports the use of the <Text as='b'>Baht</Text> and <Text as='b'>Points</Text> feature.</P>
-            <P><Text as='b'>Discount Features:</Text> Promo codes, Coupons, Points to Discounts and Auto Discount.</P>
-            <P><Text as='b'>Partial point Feature:</Text> Is the use of <Text as='b'>Baht</Text> together with <Text as='b'>Points</Text>.</P>
-            <P><Text as='b'>Campaign Related Feature:</Text> Show products or campaigns that are related or that users might be interested in to encourage purchases or redemption.</P>
-            <P><Text as='b'>Address Feature:</Text> Delivery address and Tax address.</P>
-            <P><Text as='b'>Cart Type Feature:</Text> It will display only campaigns filter by <Text as='b'>Cart Type</Text>.</P>
-            <P><Text as='b'>Payment Feature:</Text> Developed and fixed issues in the existing payment code.</P>
-            <P><Text as='b'>Theme Config:</Text> Change the theme color according to the application being used.</P>
-            <P>Managed various configurations from the API.</P>
-            <List ml={4} my={4}>
-                <ListItem>
-                    <Meta>Stack</Meta>
-                    <span>Vue.js, Node.js</span>
-                </ListItem>
-                <ListItem>
-                    <Meta>Framework CSS</Meta>
-                    <span>Sass, Tailwind</span>
-                </ListItem>
-                <ListItem>
-                    <Meta>Library</Meta>
-                    <span>socket.io, LineLiff</span>
-                </ListItem>
-            </List>
-            <Divider my={2} />
+      <P>
+        I built product modules and client apps on top of the Buzzebees
+        template, mostly for campaigns and privileges that members redeem with
+        Baht, points or both.
+      </P>
 
-            <Heading as="h4" fontSize={16} mt={3} mb={2}>
-                <Center>Productization - Buzzebees Demo</Center>
-            </Heading>
-            <P>Develop and upgrade a system from <Text as='b'>Template</Text>.</P>
-            <P>
-                This project was developed to be used by customers who want to use the system (Subscription).
-            </P>
-            <P>
-                Research and develop the Design Token to be used as a feature in the system.
-            </P>
-            <List ml={4} my={4}>
-                <ListItem>
-                    <Meta>Stack</Meta>
-                    <span>Vue.js, Node.js</span>
-                </ListItem>
-                <ListItem>
-                    <Meta>Framework CSS</Meta>
-                    <span>Sass, Tailwind</span>
-                </ListItem>
-                <ListItem>
-                    <Meta>Library</Meta>
-                    <span>socket.io, LineLiff</span>
-                </ListItem>
-            </List>
-            <Divider my={2} />
+      <Project
+        name="Shopping Cart & My Order (product module)"
+        stack={['Vue.js', 'Node.js', 'Sass', 'Tailwind CSS']}
+      >
+        <Item>
+          Built a cart and order system that many client apps plug into, with
+          payment in <Text as="b">Baht, points, or a mix of both</Text>.
+        </Item>
+        <Item>
+          Added discounts (promo codes, coupons, points-to-discount and auto
+          discount), related-campaign suggestions, delivery and tax addresses,
+          and filtering by cart type.
+        </Item>
+        <Item>
+          Made the theme and other settings configurable from the API, so one
+          codebase serves each client&apos;s brand.
+        </Item>
+      </Project>
 
-            <Heading as="h4" fontSize={16} mt={3} mb={2}>
-                <Center>Productization - Buzzebees POS</Center>
-            </Heading>
-            <P>Developed a campaign and privilege data management system.</P>
-            <List ml={4} my={4}>
-                <ListItem>
-                    <Meta>Stack</Meta>
-                    <span>Vue.js, Node.js</span>
-                </ListItem>
-                <ListItem>
-                    <Meta>Framework CSS</Meta>
-                    <span>Sass, Tailwind</span>
-                </ListItem>
-                <ListItem>
-                    <Meta>Library</Meta>
-                    <span>socket.io</span>
-                </ListItem>
-            </List>
-        </Container>
-    </Layout>
+      <Project
+        name="Buzzebees Template & Demo (subscription product)"
+        stack={['Vue.js', 'React', 'Node.js', 'Style Dictionary']}
+      >
+        <Item>
+          Maintained the template that client projects start from, and updated
+          it against test cases.
+        </Item>
+        <Item>
+          Researched and implemented <Text as="b">Design Tokens</Text> so the
+          demo product could switch themes for each subscriber.
+        </Item>
+      </Project>
+
+      <Project
+        name="Client projects · 101 True Digital Park, Seacon Plus"
+        stack={['Vue.js', 'Node.js', 'LINE LIFF']}
+        links={
+          <>
+            Live:{' '}
+            <Link href="https://101truedigitalpark.buzzebees-dev.com" isExternal>
+              101 True Digital Park
+            </Link>
+            {' · '}
+            <Link href="https://seaconplus.buzzebees-dev.com" isExternal>
+              Seacon Plus
+            </Link>
+          </>
+        }
+      >
+        <Item>
+          Built campaign and privilege redemption apps on LINE LIFF, connected
+          to Shopping Cart &amp; My Order, with Node.js handling login and
+          routing.
+        </Item>
+      </Project>
+
+      <Project name="Buzzebees POS" stack={['Vue.js', 'Node.js']}>
+        <Item>Built the campaign and privilege data management system.</Item>
+      </Project>
+    </Container>
+  </Layout>
 )
 
-export default bzbs
+export default Bzbs
 export { getServerSideProps } from '../../components/chakra'
