@@ -1,4 +1,4 @@
-/* Terminal-style intro shown once per browser session (see components/terminal-loader.js) */
+/* Terminal-style intro shown on every full page load (see components/terminal-loader.js) */
 
 .overlay {
   position: fixed;
@@ -17,11 +17,6 @@
 :global(body.chakra-ui-light) .overlay {
   background: #f0e7db;
   color: #2c7a7b;
-}
-
-/* Already shown in this session: never paint it */
-:global(html.ta-loader-seen) .overlay {
-  display: none;
 }
 
 .hide {

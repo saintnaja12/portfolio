@@ -1,34 +1,14 @@
 import { useEffect, useState } from 'react'
 import styles from '../styles/terminal-loader.module.css'
 
-const SEEN_KEY = 'ta-loader-seen'
 const MIN_MS = 1500 // let the typing finish
 const MAX_MS = 2500 // never block the page longer than this
 const FADE_MS = 400
-
-const markSeen = () => {
-  try {
-    sessionStorage.setItem(SEEN_KEY, '1')
-  } catch (e) {
-    // storage unavailable: the loader may show again, which is harmless
-  }
-}
 
 const TerminalLoader = () => {
   const [state, setState] = useState('show') // show -> hiding -> gone
 
   useEffect(() => {
-    let seen = false
-    try {
-      seen = sessionStorage.getItem(SEEN_KEY) === '1'
-    } catch (e) {
-      seen = false
-    }
-    if (seen) {
-      setState('gone')
-      return
-    }
-
     const start = Date.now()
     let sceneReady = false
     let done = false
@@ -37,7 +17,6 @@ const TerminalLoader = () => {
     const finish = () => {
       if (done) return
       done = true
-      markSeen()
       setState('hiding')
       timers.push(setTimeout(() => setState('gone'), FADE_MS))
     }
