@@ -12,7 +12,7 @@ import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 
-const uc = () => (
+const bzbs = () => (
     <Layout title="Buzzebees Co.,Ltd.">
         <Container>
             <Title>Buzzebees Template - Vue.js, React.js</Title>
@@ -20,7 +20,7 @@ const uc = () => (
                 <Center>Buzzebees Template</Center>
             </Heading>
             <P>
-                Develop systems and update templates follow <Text as='b'>Test Cases</Text>.
+                Developed systems and updated templates following <Text as='b'>test cases</Text>.
             </P>
             <P>
                 This template can be used for a variety of projects.
@@ -87,15 +87,15 @@ const uc = () => (
                 <Center>Productization - Shopping cart & My order</Center>
             </Heading>
             <P>Developed <Text as='b'>Shopping cart & My order</Text> system to support applications connected to this system.</P>
-            <P><Text as='b'>Main Features:</Text> Supports the use of the <Text as='b'>Bath</Text> and <Text as='b'>Points</Text> feature.</P>
-            <P><Text as='b'>Discount Features:</Text> Discount Features: Promo codes, Coupons, Points to Discounts and Auto Discount.</P>
-            <P><Text as='b'>Partial point Feature:</Text> Is the use of <Text as='b'>Bath</Text> together with <Text as='b'>Points</Text>.</P>
+            <P><Text as='b'>Main Features:</Text> Supports the use of the <Text as='b'>Baht</Text> and <Text as='b'>Points</Text> feature.</P>
+            <P><Text as='b'>Discount Features:</Text> Promo codes, Coupons, Points to Discounts and Auto Discount.</P>
+            <P><Text as='b'>Partial point Feature:</Text> Is the use of <Text as='b'>Baht</Text> together with <Text as='b'>Points</Text>.</P>
             <P><Text as='b'>Campaign Related Feature:</Text> Show products or campaigns that are related or that users might be interested in to encourage purchases or redemption.</P>
             <P><Text as='b'>Address Feature:</Text> Delivery address and Tax address.</P>
             <P><Text as='b'>Cart Type Feature:</Text> It will display only campaigns filter by <Text as='b'>Cart Type</Text>.</P>
-            <P><Text as='b'>Payment Feature:</Text> Develop or solve issue from the original code.</P>
+            <P><Text as='b'>Payment Feature:</Text> Developed and fixed issues in the existing payment code.</P>
             <P><Text as='b'>Theme Config:</Text> Change the theme color according to the application being used.</P>
-            <P>Management various configs from API</P>
+            <P>Managed various configurations from the API.</P>
             <List ml={4} my={4}>
                 <ListItem>
                     <Meta>Stack</Meta>
@@ -141,7 +141,7 @@ const uc = () => (
             <Heading as="h4" fontSize={16} mt={3} mb={2}>
                 <Center>Productization - Buzzebees POS</Center>
             </Heading>
-            <P>Develop a system user management system for various insurance agents.</P>
+            <P>Developed a campaign and privilege data management system.</P>
             <List ml={4} my={4}>
                 <ListItem>
                     <Meta>Stack</Meta>
@@ -160,5 +160,5 @@ const uc = () => (
     </Layout>
 )
 
-export default uc
+export default bzbs
 export { getServerSideProps } from '../../components/chakra'

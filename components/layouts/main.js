@@ -19,7 +19,7 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Teetouch's homepage" />
+        <meta name="description" content="Teetouch Asawasupakul - Senior Software Engineer, front-end developer and UI designer in Bangkok" />
         <meta name="author" content="Teetouch Asawasupakul" />
         <meta name="author" content="Touch" />
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
