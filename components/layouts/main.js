@@ -12,6 +12,13 @@ import Section from '../section'
 // })
 
 import Spline from '@splinetool/react-spline';
+import TerminalLoader from '../terminal-loader'
+
+const onSceneLoad = () => {
+  if (typeof window !== 'undefined') {
+    window.dispatchEvent(new Event('spline-loaded'))
+  }
+}
 
 
 const Main = ({ children, router }) => {
@@ -30,11 +37,15 @@ const Main = ({ children, router }) => {
         <title>Teetouch Asawasupakul - Homepage</title>
       </Head>
 
+      <TerminalLoader />
       <NavBar path={router.asPath} />
 
       <Container maxW="container.md" pt={14}>
       <Section delay={0.1}>
-        <Spline scene="https://prod.spline.design/QtlNl16oMP0z4TMf/scene.splinecode" ></Spline>
+        <Spline
+          scene="https://prod.spline.design/QtlNl16oMP0z4TMf/scene.splinecode"
+          onLoad={onSceneLoad}
+        />
       </Section>
 
         {/* <LazyVoxelDog /> */}
